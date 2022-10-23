@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>TpIntegrador</title>
+</head>
+
+<body>
+
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg header navbarFixeado ">
+
+
+            <div class="p-1 ps-5">
+                <img src="./IMG/codoacodo.png" alt="">
+            </div>
+
+            <div class="headerTitulo">
+                <a class="navbar-brand text-light " href="./index.html">Conf Bs As</a>
+            </div>
+
+            <div class="collapse navbar-collapse pe-5 " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conviertete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success fw-bold" href="./compraTicket.html">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <section> 
+
+
+
+                <div class="categoriasDescuentos">
+
+                        <div class="estudiante">
+                                <div >
+                                    <h5 >Estudiante</h5>
+                                    <p>Tienen un descuento</p>
+                                    <p class="porcentaje">80%</p>
+                                    <small>*presentar documentacion</small>
+                                </div>     
+                        </div>
+
+                        <div class="trainee">
+                           
+                                <div>
+                                    <h5>Trainee</h5>
+                                    <p>Tienen un descuento</p>
+                                    <p class="porcentaje">50%</p>
+                                    <small>*presentar documentacion</small>
+                                </div>
+                        </div>
+
+                        <div class="junior">
+                                <div>
+                                    <h5>Junior</h5>
+                                    <p>Tienen un descuento</p>
+                                    <p class="porcentaje">15%</p>
+                                    <small>*presentar documentacion</small>
+                                </div>
+                        </div>
+                </div>
+         
+
+
+        </section>
+
+
+
+
+        <section>
+
+            <div class="containerExponentes">
+                <p>Venta</p>
+                <h2>Valor de Ticket $200</h2>
+            </div>
+
+            <div class="container formulario">
+                    <form class="row">
+
+                    <div class="form-group col-6">
+                        <input type="Name" class="form-control" id="InputName" aria-describedby="NameHelp"
+                            placeholder="Nombre">
+                    </div>
+
+                    <div class="form-group col-6">
+                        <input type="Apellido" class="form-control" id="InputApellido" placeholder="Apellido">
+                    </div>
+
+                    <div class="form-group col-12">
+                        <input type="email" class="form-control" id="InputEmail" placeholder="Correo">
+                    </div>
+
+                    <div class="form-group col-6">
+                        <p class="px-2">Cantidad</p>
+                        <input type="Cantidad" class="form-control ticketsCantidad" id="ticketsCantidad" name="Cantidad" placeholder="Cantidad">
+                    </div>
+
+                    <div class="form-group col-6">
+                        <p class="px-2">Categoria</p>
+                        <select name="Categoria" class="ticketsCategoria form-control">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+
+                    </div>
+
+                    <div class="  m-3 mx-auto col-12">
+                        <div class="total">
+                            <output class="ticketsOutput p-2 "><span class="ticketsValue">Total a pagar: </span></output>       
+                        </div>                 
+                    </div>
+
+                    <div class="mx-auto col-6">
+                        <button id="ticketsBorrar" type="reset" class="btn btn-success p-2" name="Borrar">Borrar</button>
+                    </div>
+
+                    <div class="mx-auto col-6">
+                        <button id="ticketsResumen" class="btn btn-success p-2" name="Resumen">Resumen</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer>
+
+        <section>
+
+            <div class="container-fluid footer ">
+                <ul class=" mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prensa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conferencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terminos y condiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estudiantes</a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
